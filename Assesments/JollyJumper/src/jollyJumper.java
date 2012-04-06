@@ -47,29 +47,7 @@ public class jollyJumper {
 		}
 		return true;
 	}
-	
-	/*private static boolean JollyCheck(int[] parsed) {
-		System.out.print(parsed.length);
-		//boolean[] n = new boolean[parsed.length-1];
-		
-		for (int i = 0; i < n.length; i++){//init array
-			n[i]=false;
-		}
-		
-		for (int i = 1; i< parsed.length;i++){//check if diff(current,last) is in n.
-			int x = Math.abs(parsed[i] - parsed[i-1]);
-			if (x<n.length){ //if x in n set true for that int.
-				n[i] = true;
-			}
-		}
-		
-		for (int i = 0; i < n.length; i++){ //if a number is unchecked
-			if (!n[i]){
-				return false;
-			}
-		}
-		return true;
-	}*/
+
 
 	private static ArrayList<Integer> parse(String[] s) { //knock off the first digit since it seems to be the value of n
 		ArrayList<Integer> intArray = new ArrayList<Integer>();

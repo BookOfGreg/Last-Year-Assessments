@@ -20,22 +20,6 @@ public class pancakes {
 			lines.add(line.split(" "));
 		}
 		input.close();
-		//Structure = {{s}{s}{s}{s}}
-		
-		//check input.
-		/*for (String[] s:lines){
-			for (String str:s){
-				System.out.print(str);
-			}
-			System.out.println();
-		}*/
-		
-		//get String args[] version of input for testing.
-		/*ArrayList<String[]> lines = new ArrayList<String[]>();
-		lines.add(args);
-		String[] txt = new String[1];
-		txt[0]="0";
-		lines.add(txt);*/
 				
 		//convert to int[]
 		for (String[] s:lines){
@@ -75,25 +59,6 @@ public class pancakes {
 			}
 		}
 		
-		/*//do flips on n
-		String flips = "";
-		
-		//check for max, move from pos to last unsorted. EG: 1 2 3 4 5, 5 in pos 5 is rank 1, makes 5 4 3 2 1, 4 pos 2 is rank 2, makes 5 4 3 2 1 ...
-		int maxVal = 0;
-		int maxPos = 0;
-		int sorted = 0;
-		for (int i = 0; i < n.length; i++){
-			for (int x = sorted; x < n.length; x++){
-				if (n[x]>maxVal){
-					maxVal = n[x];
-					maxPos = x+1;
-				}
-				sorted++;
-				flips += maxPos+" "+sorted+" ";
-				maxPos = 0;
-				maxVal = 0;
-			}
-		}*/
 		
 		System.out.println("0");
 	}
